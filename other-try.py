@@ -1,11 +1,37 @@
 # coding: utf-8
 
-if __name__ == '__main__':
-    test_list = ['Asd fg', 
+def _all_first_item_to_upper_and_remove_spaces(sentence):
+    """ Переовдить...
+    Args:
+    
+    Returns:
+    """
+    # Замена на заглавные
+    result_string = ''
+    space_was = False
+    for at in sentence:
+        if at != ' ':
+            if space_was:
+                result_string += at.upper()
+                space_was = False
+            else:
+                result_string += at
+        else:
+            space_was = True
+    return result_string
+
+def run():
+    test_list = ['Asd dfgdf', 
                  'Dfgghf hgghg',
                  'Lkkkff kfgh']
     for it in test_list:
-        #print it
-        print it.split(' ')
+        print _all_first_item_to_upper_and_remove_spaces(it)
         
-copywrite
+        #print it
+        #print it.split(' ')
+    
+if __name__ == '__main__':
+   run()
+
+        
+    
