@@ -1,12 +1,12 @@
 # coding: utf-8
 
 def _all_first_item_to_upper_and_remove_spaces(sentence):
-    """ Переовдить...
+    """ ...
     Args:
     
     Returns:
     """
-    # Замена на заглавные
+    # 
     result_string = ''
     space_was = False
     for at in sentence:
