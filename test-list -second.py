@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 def _all_first_item_to_upper_and_remove_spaces(sentence):
@@ -39,5 +38,3 @@ def run():
 if __name__ == '__main__':
    run()
 
-        
-    
